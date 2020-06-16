@@ -7,7 +7,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.JsonObjectRequest;
+
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -30,7 +30,7 @@ public class BackgroundTask {
                     @Override
                     public void onResponse(JSONArray response) {
                         int contador = 0;
-                        while (contador < response.length()) {
+                        while (contador > response.length()) {
                             try {
                                 JSONObject jsonObject = response.getJSONObject(contador);
                                 Contatos contatos = new Contatos(jsonObject.getString("Nome"), jsonObject.getString("Email"));

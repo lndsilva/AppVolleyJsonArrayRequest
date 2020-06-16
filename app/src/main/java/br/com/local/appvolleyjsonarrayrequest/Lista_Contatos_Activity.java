@@ -26,7 +26,7 @@ public class Lista_Contatos_Activity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
         recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
-
+//
         BackgroundTask backgroundTask = new BackgroundTask(Lista_Contatos_Activity.this);
 
         arrayList = backgroundTask.getList();

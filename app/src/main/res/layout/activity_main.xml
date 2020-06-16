@@ -9,10 +9,11 @@
 
     <Button
         android:id="@+id/btnCarregaContatos"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:text="Carrega lista de contatos" />
+        android:text="Carrega lista de contatos"
+        android:textAllCaps="true" />
 
 </LinearLayout>

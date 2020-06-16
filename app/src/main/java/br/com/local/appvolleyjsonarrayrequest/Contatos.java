@@ -4,9 +4,12 @@ public class Contatos {
     private String nome;
     private String email;
 
+    public Contatos() {
+    }
+
     public Contatos(String nome, String email) {
-        this.setNome(nome);
-        this.setEmail(email);
+        this.nome = nome;
+        this.email = email;
     }
 
     public String getNome() {
