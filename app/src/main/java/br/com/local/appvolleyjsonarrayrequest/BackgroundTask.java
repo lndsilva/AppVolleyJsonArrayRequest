@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class BackgroundTask {
     Context context;
     ArrayList<Contatos> arrayList = new ArrayList<>();
-    String url_json = "http://192.168.100.5/Projetovolleyapi/contatos.php";
+    String url_json = "http://192.168.100.13/Projetovolleyapi/contatos.php";
 
     public BackgroundTask(Context context) {
         this.context = context;
